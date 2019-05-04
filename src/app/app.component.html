@@ -1,0 +1,73 @@
+<div class="container">
+  <div class="row">
+    <h3>
+      Metric Score
+      <span>{{ total }}</span>
+    </h3>
+    
+  </div>
+  <div class="row">
+    <div class="col-sm">
+    </div>
+    <div class="col-sm d-flex align-items-center">
+      <label>
+        Pessoas
+        <span>{{ totalPessoas }}</span>
+      </label> 
+    </div>
+    <div class="col-sm d-flex align-items-center">
+      <label>
+        Processos
+        <span>{{ totalProcessos }}</span>
+      </label> 
+    </div>
+    <div class="col-sm d-flex align-items-center">
+      <label>
+        Tecnologia
+        <span>{{ totalTecnologia }}</span>
+      </label> 
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-sm d-flex align-items-center">
+      <label>Bom</label>
+    </div>
+    <div class="col-sm">
+      <app-score [total]="totalPessoas" (click)="onClickPessoas()"></app-score>
+    </div>
+    <div class="col-sm">
+      <app-score [total]="totalProcessos" (click)="onClickProcessos()"></app-score>
+    </div>
+    <div class="col-sm">
+        <app-score [total]="totalTecnologia" (click)="onClickTecnologia()"></app-score>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-sm d-flex align-items-center">
+        <label>Médio</label>
+    </div>
+    <div class="col-sm">
+      <app-score [total]="totalPessoas" (click)="onClickPessoas()"></app-score>
+    </div>
+    <div class="col-sm">
+        <app-score [total]="totalProcessos" (click)="onClickProcessos()"></app-score>
+    </div>
+    <div class="col-sm">
+        <app-score [total]="totalTecnologia" (click)="onClickTecnologia()"></app-score>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-sm d-flex align-items-center">
+        <label>Ruim</label>
+    </div>
+    <div class="col-sm">
+      <app-score [total]="totalPessoas" (click)="onClickPessoas()"></app-score>
+    </div>
+    <div class="col-sm">
+        <app-score [total]="totalProcessos" (click)="onClickProcessos()"></app-score>
+    </div>
+    <div class="col-sm">
+      <app-score [total]="totalTecnologia" (click)="onClickTecnologia()"></app-score>
+    </div>
+  </div>
+</div>

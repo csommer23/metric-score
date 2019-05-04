@@ -1,0 +1,57 @@
+@mixin spanTotal() {
+    background: #eb7777;
+    border-radius: 1em;
+    padding: 4px 9px;
+    display: inline-block;
+    font-size: 15px;
+    color: white;
+    top: -10px;
+    position: relative;
+    right: 0px;
+}
+
+
+.col-sm {
+    height: 130px;
+    border: 1px solid #ccc;
+    
+}
+
+h3 {
+    display: block;
+    width: 100%;
+    color: #4882c2;
+    text-align: center;
+    margin: 15px;
+
+    span {
+        @include spanTotal()
+    }
+}
+
+label {
+    width: 100%;
+    color: #4882c2;
+    text-align: center;
+
+    span {
+        @include spanTotal();
+        font-size: 13px;
+    }
+}
+
+.row {
+    &:nth-child(2) {
+        background: #e0e0e07a;
+    }
+    &:nth-child(3) {
+        background: #3d8e3f40;
+    }
+    &:nth-child(4) {
+        background: #8e883d40;
+    }
+    &:nth-child(5) {
+        background: #8e483d40;
+    }
+}
+
